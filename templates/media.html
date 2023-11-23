@@ -1,0 +1,113 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title> CSS MEDIA</title>
+	<style>
+		body
+		{
+			background-color: yellow;
+		}
+		div>h1
+		{
+			color: red;
+			display: ;
+		}
+		@media(min-width:0px)and(max-width:400px)
+		{
+			body
+			{
+				background-color: skyblue;
+			}
+			div>h1
+			{
+				color: white;
+				text-align: center;
+			}
+			div>h1:first-child
+			{
+				display: block;
+			}
+
+		}
+		@media (min-width:401px)and(max-width:700px)
+		{
+			body
+			{
+				background-color: lightcyan;
+			}
+			div>h1
+			{
+				color: white;
+				text-align: center;
+			}
+			div>h1:nth-child(2)
+			{
+				display: block;
+			}
+
+		}
+		@media (min-width:701px)and(max-width:950px)
+		{
+			body
+			{
+				background-color: lightgray;
+			}
+			div>h1
+			{
+				color: white;
+				text-align: center;
+			}
+			div>h1:nth-child(3)
+			{
+				display: block;
+			}
+
+		}
+		@media (min-width:951px)and(max-width:1200px)
+		{
+			body
+			{
+				background-color: lightgoldenrodyellow;
+			}
+			div>h1
+			{
+				color: white;
+				text-align: center;
+			}
+			div>h1:nth-child(4)
+			{
+				display: block;
+			}
+
+		}
+		@media (min-width:1201px)
+		{
+			body
+			{
+				background-color: lightpink;
+			}
+			div>h1
+			{
+				color: white;
+				text-align: center;
+			}
+			div>h1:nth-child(5)
+			{
+				display: block;
+			}
+
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<h1>Mobile</h1>
+		<h1>tab</h1>
+		<h1>laptop</h1>
+		<h1>tv</h1>
+		<h1>projector</h1>
+	</div>
+
+</body>
+</html>

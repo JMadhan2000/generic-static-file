@@ -1,0 +1,91 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS ROTATE</title>
+	<style>
+		body
+		{
+			background: linear-gradient(45deg,white,black,white);
+            
+		}
+		div 
+		{
+			box-shadow: 0 0 10px black;
+			width: 350px;
+			height: 400PX;
+			margin: 350px auto;
+			border-radius: 20px;
+			border: 3px solid white;
+			position: relative;
+			overflow: hidden;
+		}
+		div>img
+		{
+			width: inherit;
+			height: inherit;
+			border-radius: inherit;
+			filter: grayscale(100%);
+			transition: all 1s linear 6s;
+			
+		}
+		div:hover
+		{
+             cursor: pointer;
+		}
+		div:hover>img
+		{
+			filter: grayscale(0%);
+			transform: scale(1.2,1.2);
+		}
+		div>#curtain
+		{
+			background-color: red;
+			position: absolute;
+			top: -350px;
+			left: 0px;
+			transition: all 3s linear 3s;
+
+		}
+		div:hover>#curtain
+		{
+			transform: translateY(-100%);
+		}
+		div>#door1
+		{
+			background: linear-gradient(90deg,cyan,pink,grey);
+			position: absolute;
+			top: -350px;
+			width: 50%;
+			transform-origin: left;
+			transition: all 2s linear 1s;
+		}
+		div:hover>#door1
+		{
+			transform: rotateY(90deg);
+		}
+		div>#door2
+		{
+			background: linear-gradient(90deg,cyan,pink,grey);
+			position: absolute;
+			top: -350px;
+			width: -50%;
+			transform-origin: right;
+			transition: all 2s linear 1s;
+		}
+		div:hover>#door2
+		{
+			transform: rotateY(90deg);
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<img src="{% static 'images/madhan pic.JPG' %}" alt="">
+		<div id="curtain"></div>
+		<div id="door1"></div>
+		<div id="door2"></div>
+	</div>
+
+</body>
+</html>

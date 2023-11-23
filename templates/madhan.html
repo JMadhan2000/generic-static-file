@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>css transnsforms</title>
+	<style>
+		div
+		{
+			box-shadow: 0,0,10px, black;
+			width: 450px;
+			height: 400px;
+			margin: 100px auto;
+			position: relative;
+			overflow: hidden;
+		}
+		div:hover
+		{
+			cursor: pointer;
+		}
+		.container>img
+		{
+			width: 100%;
+			height: 100%;
+			filter: grayscale(100%);
+			transition: all 1s linear 0s;
+		}
+		div:hover>img
+		{
+			filter: grayscale(0%);
+		}
+		.container>.content
+		{
+			text-align: center;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			margin: 0px;
+			background-color:rgba(0, 0, 0, 0.4);
+			color: black;
+			transform: translate(100%);
+			transition: all 1s linear 0s;
+		}
+		.container>.content>h1
+		{
+			color: white;
+		}
+		div:hover>.content
+		{
+			transform: translate(0%);
+		}
+
+	</style>
+</head>
+<style >
+	
+</style>
+<body>
+	<div class="container">
+		<img src="{% static 'images/madhan pic.JPG' %}">
+		<div class="content">
+			<h2>J.M.M.R PHOTOGRAPH</h2>
+		<p>MADHAN always being a good person means more than just doing things for others. You have to accept and love yourself before you can put positive energy into the universe. Philosophers have been debating what is good and what is not for centuries, and many people find that it's more complicated than just being kind. While every person's journey is different, being good has a lot to do with discovering yourself and your role in the world. In order to truly be good, you will have to consider what 'goodness' means to you.</p>
+		<button>Madhan</button>
+	    </div>
+    </div>
+</body>
+</html>

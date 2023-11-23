@@ -1,0 +1,165 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Html semantic tags</title>
+	<style>
+		*
+		{
+			margin: 0px;
+		}
+		header
+		{
+			background: linear-gradient(45deg,orange,blue,green);
+			text-align: center;
+		}
+		header>h1
+		{
+			font-size: 30px;
+			color: white;
+		}
+		header>h1:first-letter
+		{
+			font-size: 45px;
+			color: red;
+		}
+		nav
+		{
+			background: linear-gradient(45deg,green,yellow,red);
+			padding: 20px;
+			text-align: center;
+		}
+		nav>a 
+		{
+			text-decoration: none;
+			margin: 20px;
+			color: black;
+			padding: 5px 10px;
+			border-radius: 10px;
+		}
+		nav>a:hover
+		{
+			box-shadow: 0 0 10px white;
+
+		}
+		aside
+		{
+			background: linear-gradient(90deg,cyan,pink,grey);
+			width: 250px;
+			height: 690px;
+			float: left;
+		}
+		aside>a
+		{
+			color: darkred;
+			display: block;
+			text-align: center;
+			text-decoration: none;
+			margin-bottom: 90px;
+			margin-top: 70px;
+			font-size: 25px;
+		}
+		aside>a:hover
+		{
+			text-decoration: underline;
+		}
+		section
+		{
+			margin-left: 150px;
+			background-color: black;
+			padding: 20px;
+			height: 650px;
+		}
+		section>h2
+		{
+			color: white;
+			background: linear-gradient(90deg,green,yellow);
+			font-size: 30px;
+			margin-bottom: 10px;
+		}
+		section>article
+		{
+			background: linear-gradient(45deg,cyan,grey);
+			margin: 10px;
+		}
+		section>article>h1
+		{
+			font-size: 30px;
+			color: darkred;
+		}
+		section>article>p
+		{
+			font-size: 23px;
+		}
+		footer
+		{
+			text-align: center;
+			background-color: orange;
+			cursor: pointer;
+		}
+		footer>h2
+		{
+			color: blue;
+		}
+		footer>small
+		{
+			color: black;
+		}
+	</style>
+</head>
+<body>
+	<!....Main Header....>
+		<header>
+			<h1>Jspiders Institute</h1>
+		</header>
+
+	<!....Main Navbar....>
+		<nav>
+			<a href="" class="active">Home</a>
+			<a href="">Courses</a>
+			<a href="">Gallery</a>
+			<a href="">Contact</a>
+			<a href="">Services</a>
+		</nav>
+
+	<!....Main Sidebar...>
+		<aside>
+			<a href="">Java</a>
+			<a href="">Python</a>
+			<a href="">Html</a>
+			<a href="">Css</a>
+			<a href="">React.Js</a>
+		</aside>
+
+	<!....Main Selection....>
+		<section>
+		<h2>Courses</h2>
+		<article>
+			<h1>Java</h1>
+			<p>Java is a multi-platform, object-oriented, and network-centric language that can be used as a platform in itself. It is a fast, secure, reliable programming language for coding everything from mobile apps and enterprise software to big data applications and server-side technologies.Java is a multi-platform, object-oriented, and network-centric language that can be used as a platform in itself.</p>
+		</article>
+		<article>
+			<h1>Python</h1>
+			<p>Java is a multi-platform, object-oriented, and network-centric language that can be used as a platform in itself. It is a fast, secure, reliable programming language for coding everything from mobile apps and enterprise software to big data applications and server-side technologies.Java is a multi-platform, object-oriented, and network-centric language that can be used as a platform in itself.</p>
+		</article>
+		<article>
+			<h1>Html</h1>
+			<p>Java is a multi-platform, object-oriented, and network-centric language that can be used as a platform in itself. It is a fast, secure, reliable programming language for coding everything from mobile apps and enterprise software to big data applications and server-side technologies.Java is a multi-platform, object-oriented, and network-centric language that can be used as a platform in itself.</p>
+		</article>
+		<article>
+			<h1>Css</h1>
+			<p>Java is a multi-platform, object-oriented, and network-centric language that can be used as a platform in itself. It is a fast, secure, reliable programming language for coding everything from mobile apps and enterprise software to big data applications and server-side technologies.Java is a multi-platform, object-oriented, and network-centric language that can be used as a platform in itself.</p>
+		</article>
+		<article>
+			<h1>React.Js</h1>
+			<p>Java is a multi-platform, object-oriented, and network-centric language that can be used as a platform in itself. It is a fast, secure, reliable programming language for coding everything from mobile apps and enterprise software to big data applications and server-side technologies.Java is a multi-platform, object-oriented, and network-centric language that can be used as a platform in itself.</p>
+		</article>
+		</section>
+	<!....Main Footer...>
+		<footer>
+			<h2>copyright:&copy;2023</h2>
+			<small>All Rights Are &reg;Reserved</small>
+		</footer>
+		
+</body>
+</html>
